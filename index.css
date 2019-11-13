@@ -17,7 +17,11 @@ footer {
 
 
 .inovatif{
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
+}
+
+.right{
+    text-align: right;
 }
 
 .makine-banlama{
@@ -32,13 +36,15 @@ footer {
     padding-right: 10%;
 }
 
+.p-10{
+    padding-left: 10%;
+}
 .bg-secon{
     background-color: #DCDCDC;
 }
 
-.prl{
-    padding-left: 20%;
-    padding-right: 10%;
+.prl-10{
+    padding-left: 30%;
 }
 
 
@@ -69,3 +75,89 @@ footer {
     text-decoration: none;
   }
 
+  .a2:link, .a2:visited {
+    color: white;
+    padding-top: 12px;
+    padding-right: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .a2:hover, .a2:active {
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .width-height{
+      width:70vh;
+      height: 70vh;
+      margin-left: 10vh;
+  }
+
+  .boyut-right{
+    width:70vh;
+    height: 55vh;
+    z-index: -1;
+  }
+
+  .boyut-left{
+    width:70vh;
+    height: 70vh;
+    z-index: -1;
+  }
+
+.konum-right{
+    position:absolute;
+    right:0; 
+    bottom:0; 
+    top: -10%;
+    text-align: initial;
+    color: black;
+}
+
+.konum-center{
+    position:absolute;
+    right:50%; 
+    bottom:0; 
+    top: 40%;
+    text-align: initial;
+    color: white;
+    width: 23%;
+    height: 7%;
+}
+
+.konum-center-1{
+    position:absolute;
+    right:48%; 
+    bottom:0; 
+    top: 45%;
+    text-align: initial;
+    color: black;
+    width: 27%;
+    height: 10%;
+    text-align: center;
+}
+
+.pt-10{
+    padding-top: 25px;
+}
+.font{
+    font-family: "Times New Roman", Times, serif;
+}
+
+.konum-left{
+    position:absolute;
+    left:0; 
+    bottom:0; 
+    top: -10%;
+}
+
+.index{
+    z-index: 1;
+}
+
+.index-2{
+    z-index: 2;
+}
