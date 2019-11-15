@@ -1,15 +1,33 @@
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+    font-family: "open_sanslight" !important;
+}
 footer { 
     display: block;
 }
 .lorem{
     position:absolute;
-    right:30%;
+    right:19%;
     left:32%; 
     bottom:0; 
     top: 16.5%;
     padding-left: 18.5%;
-    padding-right: 1%;
+    padding-right: 3%;
     padding-top: 7%;
+    padding-bottom: 13%;
     width: 50%; 
     height: 41%;
     border-style: solid;
@@ -30,6 +48,10 @@ footer {
 
 .mb-15{
     margin-bottom: 15%;
+}
+
+.mt-25{
+    margin-top: 25%;
 }
 
 .pr-10{
@@ -90,58 +112,58 @@ footer {
   }
 
 
-  .width-height{
+.width-height{
       width:70vh;
       height: 70vh;
       margin-left: 10vh;
-  }
+}
 
-  .boyut-right{
+.boyut-right{
     width:70vh;
-    height: 55vh;
+    height: 85vh;
     z-index: -1;
   }
 
-  .boyut-left{
+.boyut-left{
     width:70vh;
-    height: 70vh;
+    height: 75vh;
     z-index: -1;
   }
 
 .konum-right{
     position:absolute;
     right:0; 
-    bottom:0; 
-    top: -10%;
+    bottom:0%; 
+    top: 2%;
     text-align: initial;
     color: black;
 }
+.dondur{
+    -ms-transform: rotate(-25deg); /* IE 9 */
 
-.konum-center{
-    position:absolute;
-    right:50%; 
-    bottom:0; 
-    top: 40%;
-    text-align: initial;
-    color: white;
-    width: 23%;
-    height: 7%;
+
+    -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+
+
+    transform: rotate(-25deg);
+     
+}
+.sekil{
+    -webkit-transform: skew(-30deg); 
+    -moz-transform: skew(-30deg); 
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
 }
 
-.konum-center-1{
-    position:absolute;
-    right:48%; 
-    bottom:0; 
-    top: 45%;
-    text-align: initial;
-    color: black;
-    width: 27%;
-    height: 10%;
-    text-align: center;
-}
 
 .pt-10{
     padding-top: 25px;
+}
+
+.pt-50{
+    padding-top: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .font{
     font-family: "Times New Roman", Times, serif;
@@ -160,4 +182,112 @@ footer {
 
 .index-2{
     z-index: 2;
+}
+
+
+
+
+  .bg-img-1{
+    background-image: url("Katman15.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    height: 65vh;
+    text-align: right;
+}
+.bg-img-2{
+    background-image: url("Dikdörtgen 5.png");
+    width: 70%;
+    height: 65vh;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.height-70{
+    height: 70vh;
+}
+
+.ic{
+    border: 5px solid white;
+    position:center;
+    width: auto;
+    height: 40vh;
+    margin-left: 10vh;
+    margin-right: 30vh;
+    text-align: left;
+    padding-left: 30vh;
+    padding-right: 5vh;
+    padding-top: 15vh;
+    font-size: 17px;
+    margin-top: 12vh;
+    color: white;
+    z-index: 0;
+}
+.dondur{
+    -ms-transform: rotate(-25deg); /* IE 9 */
+
+
+    -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+
+
+    transform: rotate(-25deg);
+    
+}
+.sekil{
+    -webkit-transform: skew(-30deg); 
+    -moz-transform: skew(-30deg); 
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+}
+.konum-center{
+    position:absolute;
+    left:27%;
+    text-align: initial;
+    color: white;
+    width: auto;
+    height: 7%;
+    z-index: 3;
+    margin-top: 30vh;
+}
+
+.konum-center-1{
+    position:absolute;
+    color: black;
+    left:22%;
+    width: auto;
+    height: 10%;
+    text-align: center;
+    z-index: 2;
+    margin-top: 35vh;
+
+}
+.z-index-4{
+    z-index: 4;
+}
+
+.mySlides {
+    display:none
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
+}
+
+.display-right{
+    position:absolute;
+    top: 50%;
+    right: -92.5%;
+    transform: translate(0%,-50%);
+}
+.display-right-2{
+    position:absolute;
+    top: 37.5%;
+    right: -88.5%;
+    transform: translate(0%,-50%);
 }
