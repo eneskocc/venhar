@@ -194,7 +194,7 @@ footer {
     -o-background-size: cover;
     background-size: cover;
     width: auto;
-    height: 65vh;
+    height: 70vh;
     text-align: right;
 }
 .bg-img-3{
@@ -204,7 +204,7 @@ footer {
     -o-background-size: cover;
     background-size: cover;
     width: auto;
-    height: 65vh;
+    height: 70vh;
     text-align: right;
 }
 .bg-img-4{
@@ -214,22 +214,41 @@ footer {
     -o-background-size: cover;
     background-size: cover;
     width: auto;
-    height: 65vh;
+    height: 70vh;
     text-align: right;
 }
 .bg-img-5{
     background-color: red;
     width: 70%;
-    height: 65vh;
+    height: 70vh;
     position: absolute;
+    opacity: 0.3;
     right: 0;
-    transition: 0.3s;
     z-index: 1;
+}
+.bg-img-7{
+    background-color: blueviolet;
+    width: 70%;
+    height: 70vh;
+    position: absolute;
+    opacity: 0.3;
+    right: 0;
+    z-index: 1;
+}
+.bg-img-6{
+    background-image: url("bg3.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    height: 70vh;
+    text-align: right;
 }
 .bg-img-2{
     background-image: url("Dikdörtgen 5.png");
     width: 70%;
-    height: 65vh;
+    height: 70vh;
     position: absolute;
     right: 0;
     z-index: 1;
@@ -246,7 +265,7 @@ footer {
     margin-left: 10vh;
     margin-right: 30vh;
     text-align: left;
-    padding-left: 30vh;
+    padding-left: 35vh;
     padding-right: 5vh;
     padding-top: 8vh;
     font-size: 17px;
