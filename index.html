@@ -41,25 +41,33 @@
 
 
     <section>
+            <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                            <a href="#">Ana Sayfa</a>
+                            <a href="http://" >Hakkımızda</a>
+                            <a href="http://">Ürünler</a>
+                            <a href="http://" >Üretim</a>
+                            <a href="http://">Referanslar</a>
+                            <a href="http://">İletişim</a>
+                    </div>
+                  </div>
         <div class="pos-f-t">
             <nav class="navbar navbar-light bg-light  p-5 justify-content-end">
-              <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler " onclick="openNav()" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </nav>
-            <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-light p-4">
-                        <div class="bg-secon d-block align-items-center text-center pt-3 pb-4">
-                                    <a href="#" class="a">Ana Sayfa</a>
-                                    <a href="http://" class="a">Hakkımızda</a>
-                                    <a href="http://" class="a">Ürünler</a>
-                                    <a href="http://" class="a">Üretim</a>
-                                    <a href="http://" class="a">Referanslar</a>
-                                    <a href="http://" class="a">İletişim</a>
-                        </div>
-                    </div>
-            </div>
           </div>
+          <script>
+                function openNav() {
+                  document.getElementById("myNav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                  document.getElementById("myNav").style.width = "0%";
+                }
+                </script>
     </section>
 
 
@@ -69,11 +77,11 @@
                         <h6><u>Venhar</u></h6>
                     </div>
                     <div class="w3-container w3-large w3-text-white display-right z-index-4" style="width:100%;">
-                            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(1)"></span><br>
-                            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(2)"></span><br>
+                            <span class="w3-badge  w3-border w3-transparent w3-hover-gray" onclick="currentDiv(1)"></span><br>
+                            <span class="w3-badge w3-border w3-transparent w3-hover-gray" onclick="currentDiv(2)"></span><br>
                             <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(3)"></span><br>
-                            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(3)"></span><br>
-                            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(3)"></span>
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(4)"></span><br>
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(5)"></span>
                     </div>
                     <div class="bg-img-1 mySlides">
                             <div class="konum-center index-2 dondur">
@@ -84,26 +92,25 @@
                                     </div>
                             </div>
                             <div class="konum-center-1 index dondur">
-                                    <div class="sekil bg-light pt-10 pb-3 pl-5 pr-5" >
-                                        <h1 class="">
-                                            GÜVENDE OLSUN
-                                        </h1>
+                                    <div class="sekil bg-light pt-10 pb-3 pl-5 pr-5" style="font-size: 40px;">
+                                        <p>
+                                           <b> GÜVENDE OLSUN</b>
+                                        </p>
                                     </div>
                                     
                             </div>
                         <div class="bg-img-2">
                                 
                             <div class="ic">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem corrupti iusto excepturi eligendi, h
-                                    arum amet atque
+                                <p style="font-size: 25px;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem corrupti iusto excepturi
                                 </p>
                             </div>
                         </div>
                     </div>
                 
                 
-                    <div class="bg-img-1 mySlides">
+                    <div class="bg-img-3 mySlides">
                             <div class="konum-center index-2 dondur">
                                     <div class="sekil bg-secondary text-center  pl-5 pr-5 pt-2 pb-2">
                                         <h3>
@@ -112,17 +119,17 @@
                                     </div>
                                 </div>
                                 <div class="konum-center-1 index dondur">
-                                    <div class="sekil bg-light pt-10 pb-3 pl-5 pr-5" >
-                                        <h1 class="">
-                                            GÜVENDE OLSUN
-                                        </h1>
+                                    <div class="sekil bg-light pt-10 pb-3 pl-5 pr-5" style="font-size: 40px;">
+                                            <p>
+                                                    <b> GÜVENDE OLSUN</b>
+                                                 </p>
                                     </div>
                                     
                                 </div>
-                            <div class="bg-img-2">
+                            <div class="bg-img-5">
                                      
                                 <div class="ic">
-                                    <p>
+                                    <p style="font-size: 25px;">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem corrupti iusto excepturi eligendi, h
                                         arum amet atque
                                     </p>
@@ -131,7 +138,7 @@
                         </div>
                 
                 
-                        <div class="bg-img-1 mySlides">
+                        <div class="bg-img-4 mySlides">
                                 <div class="konum-center index-2 dondur">
                                         <div class="sekil bg-secondary text-center pl-5 pr-5 pt-2 pb-2">
                                             <h3>
@@ -140,17 +147,17 @@
                                         </div>
                                     </div>
                                     <div class="konum-center-1 index dondur">
-                                        <div class="sekil bg-light pt-10 pb-3 pl-5 pr-5" >
-                                            <h1 class="">
-                                                GÜVENDE OLSUN
-                                            </h1>
+                                        <div class="sekil bg-light pt-10 pb-3 pl-5 pr-5" style="font-size: 40px;">
+                                                <p>
+                                                        <b> GÜVENDE OLSUN</b>
+                                                     </p>
                                         </div>
                                         
                                     </div>
                                 <div class="bg-img-2">
                                        
                                     <div class="ic">
-                                        <p>
+                                        <p style="font-size: 25px;">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem corrupti iusto excepturi eligendi, h
                                             arum amet atque
                                         </p>
@@ -196,12 +203,12 @@
         <div class="row m-4 ">
             <div class="col-sm-6 p-5">
                 <div class="mb-15">
-                    <div class="inovatif right">
-                        <h1>İnovatif</h1>
+                    <div class="inovatif right" style="font-size:55px;">
+                        <p>İnovatif</p>
                     </div>
                 </div>
                 <div class="pr-10">
-                    <p>
+                    <p style="font-size: 20px;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Voluptas similique nisi possimus assumenda hic alias est praesentium dolores itaque, 
                         deleniti obcaecati soluta dignissimos facilis et dolor inventore accusamus ipsa porro?
@@ -212,10 +219,9 @@
                     </p>
                 </div>
             </div>
-            <br><br><br>
-            <div class="col-sm-6 p-5 makine-banlama">
+            <div class="col-sm-6 p-5 makine-banlama" style="margin-top: 30vh;">
                 <div class="bg-secon boyut-right konum-right pt-50 img-fluid">
-                         <p>
+                         <p style="font-size: 17px;">
                             Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Repudiandae quia soluta similique quam consequuntur magnam vero
                         </p> 
@@ -232,7 +238,7 @@
     <section>
             <div class="row">
                 
-                <div class="col-sm-6 p-5 makine-banlama">
+                <div class="col-sm-6 p-5 makine-banlama" style="margin-top: 30vh;">
                     <div class="bg-secon boyut-left konum-left img-fluid">
 
                     </div>
@@ -241,20 +247,20 @@
                     </div>
                     
                 </div>
-                <div class="col-sm-6 p-5">
+                <div class="col-sm-6 p-5" >
                         <div class="inovatif mb-15">
-                            <div  class="">
-                                <h1>Üretken</h1>
+                            <div  style="font-size:55px;">
+                                <p>Üretken</p>
                             </div>
                         </div>
                         <div class="pr-10">
-                            <p>
+                            <p style="font-size: 20px;">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Voluptas similique nisi possimus assumenda hic alias est praesentium dolores itaque, 
                                 deleniti obcaecati soluta dignissimos facilis et dolor inventore accusamus ipsa porro?
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             </p>
-                            <p>
+                            <p style="font-size: 20px;">
                                 Voluptas similique nisi possimus assumenda hic alias est praesentium dolores itaque, 
                                 Voluptas similique nisi possimus assumenda hic alias est praesentium dolores itaque, 
                                 deleniti obcaecati soluta dignissimos facilis et dolor inventore accusamus ipsa porro?
@@ -262,9 +268,9 @@
                         </div>
                         
                     </div>
-                    <div class="col-sm-12 right pr-5">
-                            <h1><small> Bazı </small> </h1>
-                            <h1><small> Projelerimiz </small> </h1>
+                    <div class="col-sm-12 right pr-5" style="font-size:55px;">
+                            <p> Bazı </small> </p>
+                            <p> Projelerimiz </p>
                             
                     </div>
             </div>
@@ -296,7 +302,7 @@
                     <a href="http://" class="a">Referanslar</a>
                     <a href="http://" class="a">İletişim</a>
                 </div>
-                <div class="col-sm-3 bg-secon d-block align-items-center text-center  text-white pt-3">
+                <div class="col-sm-3 bg-secon d-block align-items-center text-center  text-white pt-3" style="font-size: 22px;">
                         <a href="http://youtube.com" class="a1">
                             <i class="fab fa-youtube ml-2"></i>
                         </a>|
@@ -320,7 +326,7 @@
 
     <section>
         <footer>
-            <div class="footer-copyright text-center py-3">
+            <div class="footer-copyright text-center py-3" style="font-size: 15px;">
                 Copyright(c)2019 - Venhar Mobilya Kapı Sistemleri - Bu Sitenin Tüm hakları saklıdır.
             </div>
         </footer>
