@@ -1,19 +1,72 @@
+/* open-sans-300 - latin-ext_latin */
 @font-face {
-    font-family: 'open_sanslight';
-    src: url('fonts/OpenSans-Light-webfont.eot');
-    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
-         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
-         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
-    font-weight: normal;
+    font-family: 'Open Sans';
     font-style: normal;
-
-}
+    font-weight: 300;
+    src: url('../fonts/open-sans-v17-latin-ext_latin-300.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+         url('../fonts/open-sans-v17-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v17-latin-ext_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v17-latin-ext_latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-regular - latin-ext_latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v17-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../fonts/open-sans-v17-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v17-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v17-latin-ext_latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-600 - latin-ext_latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v17-latin-ext_latin-600.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+         url('../fonts/open-sans-v17-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v17-latin-ext_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v17-latin-ext_latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-700 - latin-ext_latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v17-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+         url('../fonts/open-sans-v17-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v17-latin-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v17-latin-ext_latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-800 - latin-ext_latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v17-latin-ext_latin-800.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+         url('../fonts/open-sans-v17-latin-ext_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v17-latin-ext_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-800.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v17-latin-ext_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v17-latin-ext_latin-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
 
 
 body{
-    font-family: "open_sanslight" !important;
+    font-family: "Open Sans" !important;
 }
 footer { 
     display: block;
@@ -45,7 +98,9 @@ footer {
 .makine-banlama{
     margin-top: 13%;
 }
-
+.mr-left{
+    margin-right: 34%;
+}
 .mb-15{
     margin-bottom: 15%;
 }
@@ -91,7 +146,9 @@ footer {
     text-decoration: none;
     display: inline-block;
   }
-  
+  .a1{
+      font-size: 15px;
+  }
   .a1:hover, .a1:active {
     color: black;
     text-decoration: none;
@@ -120,39 +177,41 @@ footer {
 
 .boyut-right{
     width:70vh;
-    height: 85vh;
+    height: 90vh;
     z-index: -1;
   }
 
 .boyut-left{
     width:70vh;
-    height: 75vh;
+    height: 80%;
     z-index: -1;
   }
 
 .konum-right{
     position:absolute;
     right:0; 
-    bottom:0%; 
-    top: 2%;
+    bottom:-10vh; 
+    top: -15%;
     text-align: initial;
     color: black;
+    
 }
-.dondur{
-    -ms-transform: rotate(-25deg); /* IE 9 */
 
-
-    -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
-
-
-    transform: rotate(-25deg);
-     
+.bg-light2{
+    background-color:darkgrey;
 }
-.sekil{
-    -webkit-transform: skew(-30deg); 
-    -moz-transform: skew(-30deg); 
-    -o-transform: skew(-30deg);
-    transform: skew(-30deg);
+.boyut1{
+    position:absolute;
+    width: 70vh;
+    right: 20vh;
+}
+
+
+.konum-left{
+    position:absolute;
+    left:0; 
+    bottom:-8vh; 
+    top: -10%;
 }
 
 
@@ -161,20 +220,14 @@ footer {
 }
 
 .pt-50{
-    padding-top: 40%;
+    padding-top: 57%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 12%;
 }
 .font{
     font-family: "Times New Roman", Times, serif;
 }
 
-.konum-left{
-    position:absolute;
-    left:0; 
-    bottom:0; 
-    top: -10%;
-}
 
 .index{
     z-index: 1;
@@ -198,7 +251,7 @@ footer {
     text-align: right;
 }
 .bg-img-3{
-    background-image: url("bg1.png");
+    background-image: url("dekorasyon1.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -208,7 +261,7 @@ footer {
     text-align: right;
 }
 .bg-img-4{
-    background-image: url("bg2.jpg");
+    background-image: url("dekarasyon2.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -222,7 +275,7 @@ footer {
     width: 70%;
     height: 70vh;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.8;
     right: 0;
     z-index: 1;
 }
@@ -231,12 +284,12 @@ footer {
     width: 70%;
     height: 70vh;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.8;
     right: 0;
     z-index: 1;
 }
 .bg-img-6{
-    background-image: url("bg3.png");
+    background-image: url("dekarasyon3.jpeg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -273,42 +326,46 @@ footer {
     color: white;
     z-index: 0;
 }
+
 .dondur{
-    -ms-transform: rotate(-25deg); /* IE 9 */
+    -ms-transform: rotate(-18deg); /* IE 9 */
 
 
-    -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+    -webkit-transform: rotate(-18deg); /* Chrome, Safari, Opera */
 
 
-    transform: rotate(-25deg);
-    
+    transform: rotate(-18deg);
+     
 }
 .sekil{
-    -webkit-transform: skew(-30deg); 
-    -moz-transform: skew(-30deg); 
-    -o-transform: skew(-30deg);
-    transform: skew(-30deg);
+    -webkit-transform: skew(-22deg); 
+    -moz-transform: skew(-22deg); 
+    -o-transform: skew(-22deg);
+    transform: skew(-22deg);
+    
 }
+
 .konum-center{
     position:absolute;
     left:27%;
     text-align: initial;
     color: white;
-    width: auto;
+    width: 40vh;
     height: 7%;
     z-index: 3;
-    margin-top: 30vh;
+    margin-top: 28vh;
 }
 
 .konum-center-1{
     position:absolute;
     color: black;
     left:22%;
-    width: auto;
+    width: 55vh;
     height: 10%;
     text-align: center;
     z-index: 2;
-    margin-top: 35vh;
+    margin-top: 33vh;
+    color: gray;
 
 }
 .z-index-4{
@@ -347,10 +404,11 @@ footer {
     z-index: 6;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgb(5,0,0);
+    background-color: rgba(0,0,0);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.7s;
+    opacity: 1.2;
   }
   
   .overlay-content {
@@ -382,9 +440,54 @@ footer {
   }
   
   @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+    .overlay a {
+        font-size: 20px
+    }
+
     .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
+
+
+.kenar-bant{
+    width: 32vh;
+    height: 8vh;
+    position:absolute; 
+    z-index: 8; 
+    right: -15vh;
+    top: 22vh;
+    font-size: 15px;
+    font-weight:700;
+    box-shadow: 3px 3px 6px #000;
+    border-radius: 3px;
+    
+}
+
+.kenar-bant-btn{
+    position:absolute; 
+    z-index:8; 
+    right: -12vh;
+    top: 17vh;
+    font-size: 15px;
+    font-weight:700;
+    border-top:30px solid  rgb(87, 84, 84);
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+}
+
+.kenar-bant-btn1{
+    position:absolute; 
+    z-index:8; 
+    right: -12vh;
+    top: 12vh;
+    font-size: 15px;
+    font-weight:700;
+    border-bottom:30px solid rgb(87, 84, 84);
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+}
+
+
