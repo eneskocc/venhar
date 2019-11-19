@@ -408,7 +408,7 @@ footer {
     background-color: rgba(0,0,0);
     overflow-x: hidden;
     transition: 0.7s;
-    opacity: 1.2;
+    opacity: 0.92;
   }
   
   .overlay-content {
@@ -451,6 +451,14 @@ footer {
     }
 }
 
+@keyframes sagdanGelen {
+    0% {
+      right: -25vh;
+    }
+    100% {
+      right: -15vh;
+    }
+  } 
 
 .kenar-bant{
     width: 32vh;
@@ -463,6 +471,9 @@ footer {
     font-weight:700;
     box-shadow: 3px 3px 6px #000;
     border-radius: 3px;
+    display: none;
+    animation-name: sagdanGelen;
+    animation-duration: 0.5s;
     
 }
 
@@ -489,5 +500,13 @@ footer {
     border-left:30px solid transparent;
     border-right:30px solid transparent;
 }
+
+
+.sekil p,h5{
+    transform: scale(22deg);
+}
+
+
+
 
 

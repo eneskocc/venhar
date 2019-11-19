@@ -86,7 +86,6 @@
     <section>
         <div class=" w3-display-container" style="width: 100%;">
             <div class="w3-container w3-large w3-text-white display-right-2 z-index-4" style="width:100%;">
-                <h6><u>Venhar</u></h6>
             </div>
             <div class="w3-container w3-large w3-text-white display-right z-index-4" style="width:100%;">
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(1)"></span><br>
@@ -259,7 +258,7 @@
 
     </section>
 
-    <section>
+    <section class="mb-5">
         <div class="row mb-5 mt-5">
             <div class="col-sm-6 p-5">
                 <div class="mb-15">
@@ -287,88 +286,131 @@
                     </p>
                 </div>
 
-                <div class="w3-content w3-section index-1 bg-secon p-4 boyut1">
-                    <div class="mySlides1 w3-animate-right ">
-                        <img src="Katman 20.png" class="img-fluid mr-5 " alt="" style="width: 500px;height: 250px;"
-                            onmouseover="displayy(div1)" onmouseout="displayy1(div1)">
+                <div class="w3-content w3-section index-1 bg-secon p-4 boyut1" id="acs1">
+                    <div class="mySlides1 w3-animate-top " id="asc1">
+
+                        <img src="Katman 20.png" class="img-fluid mr-5 " alt="" style="width: 500px;height: 250px;">
                         <div>
-                            <div class="kenar-bant-btn1" onclick="current(3)">
-
-                            </div>
-                            <div class="kenar-bant-btn" onclick="current(2)">
-
-                            </div>
-                            <div class="bg-light text-dark text-center p-4 kenar-bant div1">
+                            <div class="bg-light text-dark text-center p-4 kenar-bant" id="div1">
                                 <p>KENAR BANTLAMA</p>
                             </div>
                         </div>
 
                     </div>
-                    <div class="mySlides1 w3-animate-right ">
-                        <img src="pic1.png" class="img-fluid mr-5 bg-light2" alt="" style="width: 500px;height: 250px;"
-                            onmouseover="displayy(div2)" onmouseout="displayy1(div2)">
-                        <div>
-                            <div class="kenar-bant-btn1" onclick="current(1)">
-
-                            </div>
-                            <div class="kenar-bant-btn" onclick="current(3)">
-
-                            </div>
-                        </div>
-                        <div class="bg-light text-dark text-center p-4 kenar-bant div2">
+                    <div class="mySlides1 w3-animate-top " id="acs2">
+                        <img src="pic1.png" class="img-fluid mr-5 bg-light2" alt="" style="width: 500px;height: 250px;">
+                        <div class="bg-light text-dark text-center p-4 kenar-bant" id="div2">
                             <p>DANS ETME</p>
                         </div>
                     </div>
-                    <div class="mySlides1 w3-animate-right ">
-                        <img src="pic.jpeg" class="img-fluid mr-5 bg-light2" alt="" style="width: 500px;height: 250px;"
-                            onmouseover="displayy(div3)" onmouseout="displayy1(div3)">
-                        <div>
-                            <div class="kenar-bant-btn1" onclick="current(2)">
-
-                            </div>
-                            <div class="kenar-bant-btn" onclick="current(1)">
-
-                            </div>
-                        </div>
-                        <div class="bg-light text-dark text-center p-4 kenar-bant div3">
+                    <div class="mySlides1 w3-animate-top " id="acs3">
+                        <img src="pic.jpeg" class="img-fluid mr-5 bg-light2" alt="" style="width: 500px;height: 250px;">
+                        <div class="bg-light text-dark text-center p-4 kenar-bant" id="div3">
                             <p>PLAY GAME</p>
                         </div>
                     </div>
+                    <div>
+                        <div class="kenar-bant-btn1" onclick="plusSlides(-1)">
+
+                        </div>
+                        <div class="kenar-bant-btn" onclick="plusSlides(1)">
+
+                        </div>
+                    </div>
+
                 </div>
+
+
                 <script>
-                    function displayy(aa) {
-                        document.getElementsByClassName(aa).style.display = "block";
-                    }
-                    function displayy1(aa) {
-                        var x=document.getElementsByClassName(aa);
-                        x.style.display = "none";
-                    }
-                    var myIndex1 = 0;
-                    carousel1();
 
-                    function carousel1() {
-                        var i;
-                        var x = document.getElementsByClassName("mySlides1");
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
+                    $("#acs1").mouseover(function () {
+                        $("#div1").css("display", "block");
+                    });
+
+                    $("#acs1").mouseout(function () {
+                        var elem = document.getElementById("div1");   
+                        var pos = -15;
+                        var id = setInterval(frame, 1);
+                        function frame() {
+                            if (pos == -20) {
+                            clearInterval(id);
+                            } else {
+                            pos--; 
+                            elem.style.right = pos + "vh";  
+                            }
                         }
-                        myIndex1++;
-                        if (myIndex1 > x.length) { myIndex1 = 1 }
-                        x[myIndex1 - 1].style.display = "block";
-                        setTimeout(carousel1, 5500);
+                        $("#div1").css("display", "none");
+                    });
+
+
+                    $("#acs2").mouseover(function () {
+                        $("#div2").css("display", "block");
+                    });
+
+                    $("#acs2").mouseout(function () {
+                        var elem = document.getElementById("div2");   
+                        var pos = -15;
+                        var id = setInterval(frame, 1);
+                        function frame() {
+                            if (pos == -40) {
+                            clearInterval(id);
+                            } else {
+                            pos--; 
+                            elem.style.right = pos + "vh";  
+                            }
+                        }
+                        $("#div2").css("display", "none");
+                    });
+
+                    $("#acs3").mouseover(function () {
+                        $("#div3").css("display", "block");
+                    });
+
+                    $("#acs3").mouseout(function () {
+                        var elem = document.getElementById("div3");   
+                        var pos = -15;
+                        var id = setInterval(frame,1);
+                        function frame() {
+                            if (pos == -30) {
+                            clearInterval(id);
+                            } else {
+                            pos--; 
+                            elem.style.right = pos + "vh";  
+                            }
+                        }
+                        $("#div3").css("display", "none");
+                    });
+
+                    function current2(n) {
+                        current(n - 1);
                     }
 
+                    function current1(n) {
+                        current(n + 1);
+                    }
                     var slideIndex1 = 1;
                     showDivs1(slideIndex1);
                     function current(n) {
                         showDivs1(slideIndex1 = n);
                     }
 
+                    function plusSlides(n) {
+                        showDivs1(slideIndex1 += n);
+                    }
+
+                    function currentSlide(n) {
+                        showDivs1(slideIndex1 = n);
+                    }
+
                     function showDivs1(n) {
                         var i;
                         var x = document.getElementsByClassName("mySlides1");
-                        if (n > x.length) { slideIndex1 = 1 }
-                        if (n < 1) { slideIndex1 = x.length }
+                        if (n > x.length) {
+                            slideIndex1 = 1
+                        }
+                        if (n < 1) {
+                            slideIndex1 = x.length
+                        }
                         for (i = 0; i < x.length; i++) {
                             x[i].style.display = "none";
                         }
@@ -381,7 +423,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="mt-5">
         <div class="row">
 
             <div class="col-sm-6 p-5 makine-banlama" style="margin-top: 30vh;">
